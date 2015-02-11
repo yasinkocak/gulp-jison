@@ -25,7 +25,7 @@
     "should": "~5.0.0"
   },
   "dependencies": {
-    "jison": "~0.4.15",
+    "jison": "git://github.com/GerHobbelt/jison.git#master",
     "through2": "~0.6.3",
     "gulp-util": "~3.0.3"
   }
