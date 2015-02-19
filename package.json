@@ -14,7 +14,10 @@
     "gulpplugin",
     "jison"
   ],
-  "author": "Matt Eckert <me@matteckert.com>",
+  "author": {
+    "name": "Matt Eckert",
+    "email": "me@matteckert.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/matteckert/gulp-jison/issues"
