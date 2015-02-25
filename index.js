@@ -64,7 +64,7 @@ module.exports = function (options) {
             } catch (error) {
                 // Tweak the exception message to include the jison source file/path:
                 // make it clear which of possibly many jison input files caused the exception.
-                error.message += '   (in source file: ' + file.relative + ')';
+                error.message += '\n        (in source file: "' + file.relative + '")';
 
                 this.emit('error', new PluginError(PLUGIN_NAME, error));
             }
