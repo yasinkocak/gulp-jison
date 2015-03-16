@@ -26,10 +26,8 @@ module.exports = function (options) {
         if (file.isBuffer()) {
             try {
                 var grammar = ebnfParser.parse(file.contents.toString());
-                if(options.lexFile)
-                {
+                if (options.lexFile) {
                     var lexFile = fs.readFileSync(options.lexFile, 'utf-8');
-                    console.log(lexFile);
                     grammar.lex = lexParser.parse(lexFile);
                 }
                 file.contents = new Buffer(new Generator(grammar, options).generate());
