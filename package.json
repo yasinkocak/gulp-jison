@@ -28,9 +28,11 @@
     "should": "~5.0.0"
   },
   "dependencies": {
+    "ebnf-parser": "^0.1.10",
     "gulp-util": "~3.0.3",
     "jison": "git://github.com/GerHobbelt/jison.git#master",
     "object-assign": "^2.0.0",
     "through2": "~0.6.3"
+    "lex-parser": "^0.1.4"
   }
 }
